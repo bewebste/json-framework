@@ -288,7 +288,8 @@ again: while (i < len) {
 - (int)decodeHexQuad:(const char *)hexQuad {
 	char c;
 	int ret = 0;
-    for (int i = 0; i < 4; i++) {
+	int i;
+    for (i = 0; i < 4; i++) {
 		ret *= 16;
 		switch (c = hexQuad[i]) {
 			case '\0':

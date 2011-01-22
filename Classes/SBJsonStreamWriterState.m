@@ -51,8 +51,9 @@ static SBJsonStreamWriterStateArrayValue *kSBJsonStreamWriterStateArrayValue;
 - (BOOL)expectingKey:(SBJsonStreamWriter*)writer { return NO; }
 - (void)transitionState:(SBJsonStreamWriter *)writer {}
 - (void)appendWhitespace:(SBJsonStreamWriter*)writer {
+	int i;
 	[writer.buf appendBytes:"\n" length:1];
-	for (int i = 0; i < writer.depth; i++)
+	for (i = 0; i < writer.depth; i++)
 	    [writer.buf appendBytes:"  " length:2];
 }
 @end
