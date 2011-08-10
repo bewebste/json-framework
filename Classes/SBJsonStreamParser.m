@@ -213,9 +213,9 @@
 							NSNumber *number;
 							if (tok == sbjson_token_integer && len < 12) {
 								char *e = NULL;
-								long l = strtol(buf, &e, 0);
+								long long l = strtoll(buf, &e, 0);
 								NSAssert((e-buf) == (int)len, @"unexpected length");
-								number = [NSNumber numberWithLong:l];
+								number = [NSNumber numberWithLongLong:l];
 								
 							} else if (tok == sbjson_token_double && len < 7) {
 								char *e = NULL;
