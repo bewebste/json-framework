@@ -110,7 +110,7 @@
         return tmp;
     
     if (error_) {
-		NSDictionary *ui = [NSDictionary dictionaryWithObjectsAndKeys:error, NSLocalizedDescriptionKey, nil];
+		NSDictionary *ui = @{NSLocalizedDescriptionKey: error};
         *error_ = [NSError errorWithDomain:@"org.brautaset.json.parser.ErrorDomain" code:0 userInfo:ui];
 	}
 	

@@ -94,7 +94,7 @@
 
 		case SBJsonStreamParserAdapterObject:
 			NSParameterAssert(keyStack.count);
-			[dict setObject:obj forKey:[keyStack lastObject]];
+			dict[[keyStack lastObject]] = obj;
 			[keyStack removeLastObject];
 			break;
 			
@@ -153,7 +153,7 @@
 }
 
 - (void)parser:(SBJsonStreamParser*)parser foundBoolean:(BOOL)x {
-	[self parser:parser found:[NSNumber numberWithBool:x]];
+	[self parser:parser found:@(x)];
 }
 
 - (void)parserFoundNull:(SBJsonStreamParser*)parser {

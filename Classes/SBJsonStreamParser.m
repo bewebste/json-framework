@@ -215,13 +215,13 @@
 								char *e = NULL;
 								long long l = strtoll(buf, &e, 0);
 								NSAssert((e-buf) == (int)len, @"unexpected length");
-								number = [NSNumber numberWithLongLong:l];
+								number = @(l);
 								
 							} else if (tok == sbjson_token_double && len < 7) {
 								char *e = NULL;
 								double d = strtod(buf, &e);
 								NSAssert((e-buf) == (int)len, @"unexpected length");
-								number = [NSNumber numberWithDouble:d];
+								number = @(d);
 
 							} else {
 								NSData *data = [NSData dataWithBytes:buf length:len];
