@@ -90,7 +90,7 @@ static NSDecimalNumber *notANumber;
 
 		if (![self writeString:k])
 			return NO;
-		if (![self writeValue:dict[k]])
+		if (![self writeValue:[dict objectForKey:k]])
 			return NO;
 	}
 	
@@ -262,7 +262,7 @@ static const char *strForChar(int c) {
 	[s appendSeparator:self];
 	if (humanReadable) [s appendWhitespace:self];
 	
-	NSMutableData *data = stringCache[string];
+	NSMutableData *data = [stringCache objectForKey:string];
 	if (data) {
 		[buf appendBytes:[data bytes] length:[data length]];
 		[s transitionState:self];
@@ -294,7 +294,7 @@ static const char *strForChar(int c) {
 
 	[data appendBytes:"\"" length:1];
 	[buf appendBytes:[data bytes] length:[data length]];
-	stringCache[string] = data;
+	[stringCache setObject:string forKey:data];
 	[s transitionState:self];
 	return YES;
 }

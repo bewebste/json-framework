@@ -94,7 +94,7 @@
 
 		case SBJsonStreamParserAdapterObject:
 			NSParameterAssert(keyStack.count);
-			dict[[keyStack lastObject]] = obj;
+			[dict setObject:obj forKey:[keyStack lastObject]];
 			[keyStack removeLastObject];
 			break;
 			
