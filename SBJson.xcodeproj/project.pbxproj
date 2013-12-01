@@ -837,6 +837,94 @@
 			};
 			name = Release;
 		};
+		DDAA33A318496744009B6E37 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_VERSION = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = (
+					"-Wextra",
+					"-Wall",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Beta;
+		};
+		DDAA33A418496744009B6E37 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 38;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 38;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "SBJson/SBJson-Prefix.pch";
+				INFOPLIST_FILE = "SBJson/SBJson-Info.plist";
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Beta;
+		};
+		DDAA33A518496744009B6E37 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_PREFIX_HEADER = "SBJsonTests/SBJsonTests-Prefix.pch";
+				INFOPLIST_FILE = "SBJsonTests/SBJsonTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Beta;
+		};
+		DDAA33A618496744009B6E37 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "sbjson-ios/sbjson-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					include/,
+					"$(BUILT_PRODUCTS_DIR)/usr/local/lib/include/",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/SBJson/;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Beta;
+		};
+		DDAA33A718496744009B6E37 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "sbjson-iosTests/sbjson-iosTests-Prefix.pch";
+				INFOPLIST_FILE = "sbjson-iosTests/sbjson-iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Beta;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -844,6 +932,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC1232621391D5CC00131607 /* Debug */,
+				DDAA33A318496744009B6E37 /* Beta */,
 				BC1232631391D5CC00131607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -853,6 +942,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC1232651391D5CC00131607 /* Debug */,
+				DDAA33A418496744009B6E37 /* Beta */,
 				BC1232661391D5CC00131607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -862,6 +952,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC1232681391D5CC00131607 /* Debug */,
+				DDAA33A518496744009B6E37 /* Beta */,
 				BC1232691391D5CC00131607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -871,6 +962,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCC2628813920FC7003D9994 /* Debug */,
+				DDAA33A618496744009B6E37 /* Beta */,
 				BCC2628913920FC7003D9994 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -880,6 +972,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCC2628B13920FC7003D9994 /* Debug */,
+				DDAA33A718496744009B6E37 /* Beta */,
 				BCC2628C13920FC7003D9994 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
