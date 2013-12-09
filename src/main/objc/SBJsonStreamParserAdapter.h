@@ -136,6 +136,6 @@ typedef enum {
  Your delegate object
  Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate messages.
  */
-@property (nonatomic, weak) id<SBJsonStreamParserAdapterDelegate> delegate;
+@property (nonatomic, assign) id<SBJsonStreamParserAdapterDelegate> delegate;
 
 @end

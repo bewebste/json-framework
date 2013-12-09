@@ -122,7 +122,7 @@ typedef enum {
  */
 @interface SBJsonStreamParser : NSObject
 
-@property (nonatomic, weak) SBJsonStreamParserState *state; // Private
+@property (nonatomic, strong) SBJsonStreamParserState *state; // Private
 @property (nonatomic, readonly, strong) NSMutableArray *stateStack; // Private
 
 /**
@@ -134,7 +134,7 @@ typedef enum {
  Usually this should be an instance of SBJsonStreamParserAdapter, but you can
  substitute your own implementation of the SBJsonStreamParserDelegate protocol if you need to.
  */
-@property (nonatomic, weak) id<SBJsonStreamParserDelegate> delegate;
+@property (nonatomic, assign) id<SBJsonStreamParserDelegate> delegate;
 
 /**
  The max parse depth

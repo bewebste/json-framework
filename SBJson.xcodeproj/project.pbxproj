@@ -707,6 +707,7 @@
 				GCC_PREFIX_HEADER = "SBJson/SBJson-Prefix.pch";
 				INFOPLIST_FILE = "SBJson/SBJson-Info.plist";
 				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = framework;
@@ -726,6 +727,7 @@
 				GCC_PREFIX_HEADER = "SBJson/SBJson-Prefix.pch";
 				INFOPLIST_FILE = "SBJson/SBJson-Info.plist";
 				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = framework;
@@ -865,6 +867,7 @@
 				GCC_PREFIX_HEADER = "SBJson/SBJson-Prefix.pch";
 				INFOPLIST_FILE = "SBJson/SBJson-Info.plist";
 				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = framework;
