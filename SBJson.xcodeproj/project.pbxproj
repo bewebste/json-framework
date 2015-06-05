@@ -429,7 +429,7 @@
 			name = SBJsonTests;
 			productName = SBJsonTests;
 			productReference = BC1232521391D5CC00131607 /* SBJsonTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		BCC2626813920FC7003D9994 /* sbjson-ios */ = {
 			isa = PBXNativeTarget;
@@ -465,7 +465,7 @@
 			name = "sbjson-iosTests";
 			productName = "sbjson-iosTests";
 			productReference = BCC2627313920FC7003D9994 /* sbjson-iosTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -701,6 +701,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 38;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 38;
 				FRAMEWORK_VERSION = A;
@@ -721,6 +722,7 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 38;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 38;
 				FRAMEWORK_VERSION = A;
@@ -861,6 +863,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 38;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 38;
 				FRAMEWORK_VERSION = A;
